@@ -1,5 +1,6 @@
 /* =========================
-   RESET GENERAL
+   GENERAL RESET
+   To remove default browser styling and set base sizing
    ========================= */
 * {
   margin: 0;
@@ -8,18 +9,20 @@
 }
 
 :root {
+  /* To set 1rem = 10px for easier scaling */
   font-size: 62.5%;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* To prevent unwanted scrolling */
   font-family: "Courier New", Courier, monospace;
 }
 
 /* =========================
    LANDING PAGE
+   To style the initial hero section
    ========================= */
 .landing {
   width: 100%;
@@ -27,6 +30,7 @@ body {
 }
 
 .hero {
+  /* To set the background image and center it */
   background-image: url("img/landing_bg.png");
   background-position: center;
   background-size: cover;
@@ -58,6 +62,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
+/* START BUTTON: To create the retro branded CTA button */
 .button__cta {
   background-color: #feda42;
   color: #4b4b4b;
@@ -87,10 +92,11 @@ body {
 }
 
 /* =========================
-   GAME BOY
+   GAME BOY UI
+   To build the handheld console interface
    ========================= */
 .game-wrapper {
-  display: none;
+  display: none; /* To hide by default until START is clicked */
   width: 100%;
   height: 100%;
   background-color: #ffe792;
@@ -98,6 +104,7 @@ body {
 }
 
 .game-screen {
+  /* To center the Game Boy frame on the screen */
   position: absolute;
   top: 30px;
   left: 50%;
@@ -117,6 +124,7 @@ body {
 }
 
 .game-lcd {
+  /* To define the greenish LCD inner display */
   width: 90%;
   height: 88%;
   background-color: #d6d6cf;
@@ -129,6 +137,7 @@ body {
 }
 
 .screen-logo {
+  /* To style the "AWS GAME COLOR" text below the screen */
   margin-top: 6px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -161,6 +170,7 @@ body {
 }
 
 .start-screen {
+  /* To show initial messages on top of the LCD */
   position: absolute;
   inset: 0;
   background-color: #cfcfca;
@@ -188,7 +198,7 @@ body {
   line-height: 1.5;
 }
 
-/* CAMBIO: Gato más grande */
+/* HERO AVATAR: To define the size of the guide cat */
 .hero-avatar {
   width: 140px;
   height: 140px;
@@ -215,7 +225,7 @@ body {
 }
 
 .lcd-content {
-  display: none;
+  display: none; /* Displayed via JS when game starts */
   height: 100%;
   gap: 26px;
   align-items: center;
@@ -223,6 +233,7 @@ body {
 }
 
 .path {
+  /* To create the vertical progress bar with dots */
   width: 70px;
   height: 90%;
   display: flex;
@@ -232,6 +243,7 @@ body {
 }
 
 .path-node {
+  /* To style the individual progress dots */
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -243,6 +255,7 @@ body {
 }
 
 .path-node::after {
+  /* To create the line connecting the dots */
   content: "";
   position: absolute;
   top: 100%;
@@ -264,6 +277,7 @@ body {
 }
 
 .question-panel {
+  /* To contain the quiz text area */
   flex: 1;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
@@ -279,6 +293,10 @@ body {
   white-space: pre-line;
 }
 
+/* =========================
+   CONTROLS AREA
+   To style the physical buttons on the console
+   ========================= */
 .bottom-area {
   position: absolute;
   bottom: 55px;
@@ -290,6 +308,7 @@ body {
 }
 
 .reset-button {
+  /* To style the SELECT/START style reset bar */
   width: 90px;
   height: 12px;
   border-radius: 8px;
@@ -313,6 +332,7 @@ body {
 }
 
 .round-btn {
+  /* To create the classic A/B round buttons */
   width: 70px;
   height: 70px;
   border-radius: 50%;
