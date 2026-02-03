@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS GAME</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="landing">
+      <div class="hero">
+        <div class="hero__content">
+          <img
+            src="img/logo_app.png"
+            class="content__logo"
+            alt="Logo Pupetdex"
+          />
+          <p class="content__slogan">
+            Resuelve el camino y descubre la Pupetdex de criaturas AWS
+          </p>
+          <button class="button__cta js-start">START</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-wrapper">
+      <div class="game-screen">
+        <div class="game-lcd">
+          <div class="start-screen">
+            <div class="start-box">
+              <img
+                src="img/gato-explorador.png"
+                class="hero-avatar"
+                alt="Gato explorador"
+              />
+              <p>
+                Resuelve el camino y me ayudarás a encontrar a las demás
+                criaturas de AWS.
+              </p>
+              <div class="hint">Pulsa V para comenzar</div>
+            </div>
+          </div>
+
+          <div class="lcd-content">
+            <div class="path">
+              <div class="path-node current"></div>
+              <div class="path-node"></div>
+              <div class="path-node"></div>
+              <div class="path-node"></div>
+              <div class="path-node"></div>
+            </div>
+            <div class="question-panel">
+              <p class="question-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-logo">
+          <span class="aws-game">AWS GAME</span>
+          <span class="c">C</span><span class="o">O</span
+          ><span class="l">L</span><span class="o2">O</span
+          ><span class="r">R</span>
+        </div>
+      </div>
+
+      <div class="bottom-area">
+        <button class="reset-button">RESET</button>
+        <div class="buttons-right">
+          <button class="round-btn btn-true">V</button>
+          <button class="round-btn btn-false">F</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

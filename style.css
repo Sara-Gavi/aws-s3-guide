@@ -1,0 +1,141 @@
+/* GENERAL RESET: To clear default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+/* BODY: To fix the screen size and prevent scrolling */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* LANDING PAGE: To style the hero section and background */
+.landing {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  background-image: url("img/landing_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* BUTTON CTA: To design the yellow "Start" button with hover effects */
+.button__cta {
+  background-color: #feda42;
+  color: #4b4b4b;
+  padding: 1rem 2.4rem;
+  border-radius: 8px;
+  border: 2px solid #4b4b4b;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  box-shadow: 0 4px 0 #bfae36;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.button__cta:hover {
+  background-color: #ffe46b;
+  transform: translateY(-2px);
+}
+
+/* GAME BOY UI: To build the retro console frame */
+.game-wrapper {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe792;
+  position: relative;
+}
+
+.game-screen {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82vw;
+  max-width: 980px;
+  height: 68vh;
+  background-color: #3f3f3f;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LCD SCREEN: To define the inner display area */
+.game-lcd {
+  width: 90%;
+  height: 88%;
+  background-color: #d6d6cf;
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+}
+
+/* HERO AVATAR: To set the size for the cat images */
+.hero-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background-color: #e6eadf;
+}
+
+.hero-avatar.final {
+  width: 150px;
+  height: 150px;
+}
+
+/* PATH NODES: To style the progress indicators (dots) */
+.path-node {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #b3b3b3;
+  position: relative;
+}
+
+.path-node.current {
+  background: #f2f2f2;
+}
+.path-node.visited {
+  background: #d0d0d0;
+}
+
+/* PHYSICAL BUTTONS: To design the round console buttons */
+.round-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #5b514c, #3a312d);
+  color: #cfcfcf;
+  cursor: pointer;
+  box-shadow: 0 7px 0 #2a221f;
+}
