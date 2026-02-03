@@ -66,7 +66,7 @@ function showEnd() {
       <img src="img/gato_explorador_final.png" class="hero-avatar final" alt="Gato explorador final" />
       <p style="font-size: 1.6rem; line-height: 1.5;">
         ¡Enhorabuena!<br>
-        Accede a nuestra <strong>Pupetdex en la nube</strong> para conocer a todas las criaturas de AWS.
+        Accede a nuestra <strong>PetDex en la nube</strong> para conocer a todas las criaturas de AWS.
       </p>
       <div class="hint">Pulsa V para continuar</div>
     </div>`;
