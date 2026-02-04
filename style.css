@@ -383,11 +383,11 @@ body {
   .game-screen {
     width: 88vw;
     height: 62vh;
-    top: 24px;
+    top: 22px;
   }
 
   .bottom-area {
-    bottom: 80px;
+    bottom: 72px;
   }
 
   .reset-button {
@@ -407,70 +407,101 @@ body {
 
 /* =========================
    RESPONSIVE - MOBILE
-   MOBILE responsive: keep footer fixed and keep controls visible
+  
    ========================= */
 @media (max-width: 600px) {
+  body {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .landing {
+    height: 100dvh;
+  }
+
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    padding-bottom: 72px;
+  }
+
   .game-screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
     width: 92vw;
-    height: 54vh;
-    top: 18px;
+    height: 50vh;
+    margin: 8px auto 24px;
   }
 
   .game-lcd {
-    height: 82%;
+    height: 80%;
     padding: 10px;
   }
 
   .start-box {
     max-width: 80%;
-    padding: 14px 16px;
+    padding: 12px 14px;
   }
 
   .start-box p {
     font-size: 1.3rem;
-    line-height: 1.4;
+    line-height: 1.35;
   }
 
   .hero-avatar {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
+    width: 86px;
+    height: 86px;
+    margin-bottom: 8px;
   }
 
   .hero-avatar.final {
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
   }
 
   .hint {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .screen-logo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 6%;
   }
 
   .bottom-area {
-    bottom: 84px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .reset-button {
-    margin-right: 90px;
+    margin-right: 0;
     width: 100px;
     height: 14px;
     font-size: 1.1rem;
   }
 
   .buttons-right {
-    right: 40px;
-    gap: 18px;
+    position: static;
+    display: flex;
+    gap: 16px;
   }
 
   .round-btn {
-    width: 54px;
-    height: 54px;
-    font-size: 2.1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
     box-shadow:
       -2px -2px 3px rgba(255, 255, 255, 0.18),
       0 5px 0 #2a221f,
@@ -478,10 +509,10 @@ body {
   }
 
   .btn-true {
-    margin-top: 6px;
+    margin-top: 4px;
   }
 
   .btn-false {
-    margin-top: -4px;
+    margin-top: -3px;
   }
 }
