@@ -406,9 +406,25 @@ body {
 
 /* =========================
    RESPONSIVE - MOBILE
-    To adjust the layout for small screens
+   MOBILE responsive: allow scroll and avoid footer overlapping
    ========================= */
 @media (max-width: 600px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .game-wrapper {
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+
+  .site-footer {
+    position: static;
+  }
+
   .game-screen {
     width: 92vw;
     height: 60vh;
