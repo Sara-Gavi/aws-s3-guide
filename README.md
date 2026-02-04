@@ -1,10 +1,8 @@
 # AWS GAME - Static Website Guide
 
-Esta web sencilla forma parte de la formación en AWS y sirve como guía interactiva para entender cómo funciona el **Alojamiento de sitios web estáticos en Amazon S3**.
+Esta web sencilla forma parte de formación en AWS y sirve como guía interactiva para entender cómo funciona el **Alojamiento de sitios web estáticos en Amazon S3**.
 
 This simple website is part of my AWS training and serves as an interactive guide to understanding how **Static Website Hosting on Amazon S3** works.
-
----
 
 ## Propósito / Purpose
 
@@ -18,6 +16,17 @@ This simple website is part of my AWS training and serves as an interactive guid
 - **CSS3**: Diseño retro estilo Game Boy.
 - **HTML5**: Estructura del sitio.
 
----
+## Autoría
 
-_Proyect created for AWS Academy Practice._
+Proyecto creado por:
+
+- Elena Jiménez
+- Clara Bueno
+- Sara Gavilán
+
+## Notas finales
+
+**AWS GAME** no pretende ser documentación oficial de AWS.  
+Es una herramienta creativa para aprender, explicar y recordar conceptos técnicos de forma más humana.
+
+---
