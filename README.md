@@ -1,8 +1,8 @@
 # AWS GAME - Static Website Guide
 
-Esta web sencilla forma parte de formación en AWS y sirve como guía interactiva para entender cómo funciona el **Alojamiento de sitios web estáticos en Amazon S3**.
+Guía interactiva para entender cómo funciona el **Alojamiento de sitios web estáticos en Amazon S3**.
 
-This simple website is part of AWS training and serves as an interactive guide to understanding how **Static Website Hosting on Amazon S3** works.
+Interactive guide to understanding how **Static Website Hosting on Amazon S3** works.
 
 ## Propósito / Purpose
 
