@@ -382,11 +382,12 @@ body {
 @media (max-width: 900px) {
   .game-screen {
     width: 88vw;
-    height: 65vh;
+    height: 62vh;
+    top: 24px;
   }
 
   .bottom-area {
-    bottom: 35px;
+    bottom: 80px;
   }
 
   .reset-button {
@@ -406,33 +407,17 @@ body {
 
 /* =========================
    RESPONSIVE - MOBILE
-   MOBILE responsive: allow scroll and avoid footer overlapping
+   MOBILE responsive: keep footer fixed and keep controls visible
    ========================= */
 @media (max-width: 600px) {
-  body {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .game-wrapper {
-    min-height: 100vh;
-    padding-bottom: 80px;
-  }
-
-  .site-footer {
-    position: static;
-  }
-
   .game-screen {
     width: 92vw;
-    height: 60vh;
+    height: 54vh;
     top: 18px;
   }
 
   .game-lcd {
-    height: 84%;
+    height: 82%;
     padding: 10px;
   }
 
@@ -467,29 +452,29 @@ body {
   }
 
   .bottom-area {
-    bottom: 18px;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    bottom: 84px;
   }
 
   .reset-button {
-    margin-right: 0;
-    width: 110px;
+    margin-right: 90px;
+    width: 100px;
     height: 14px;
     font-size: 1.1rem;
   }
 
   .buttons-right {
-    position: static;
-    display: flex;
-    gap: 20px;
+    right: 40px;
+    gap: 18px;
   }
 
   .round-btn {
-    width: 56px;
-    height: 56px;
-    font-size: 2.2rem;
+    width: 54px;
+    height: 54px;
+    font-size: 2.1rem;
+    box-shadow:
+      -2px -2px 3px rgba(255, 255, 255, 0.18),
+      0 5px 0 #2a221f,
+      0 7px 10px rgba(0, 0, 0, 0.35);
   }
 
   .btn-true {
