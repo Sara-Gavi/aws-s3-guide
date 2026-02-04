@@ -94,6 +94,13 @@ function handleAnswer(answer) {
 
 /* INPUTS: To listen for clicks on the console buttons */
 document.querySelector(".btn-true").addEventListener("click", function () {
+  // 👉 NUEVO: si el juego ya ha terminado, V lleva a la PetDex
+  if (finished) {
+    window.location.href = "https://cbueno82.github.io/petdex.github.io/";
+    return;
+  }
+
+  // Inicio del juego con V
   if (!started) {
     started = true;
     startScreen.style.display = "none";
@@ -101,6 +108,8 @@ document.querySelector(".btn-true").addEventListener("click", function () {
     render();
     return;
   }
+
+  // Respuesta Verdadero
   handleAnswer(true);
 });
 
