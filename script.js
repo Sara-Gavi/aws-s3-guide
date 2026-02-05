@@ -95,7 +95,8 @@ function handleAnswer(answer) {
 /* INPUTS: To listen for clicks on the console buttons */
 document.querySelector(".btn-true").addEventListener("click", function () {
   if (finished) {
-    window.location.href = "https://cbueno82.github.io/petdex.github.io/";
+    window.location.href =
+      "https://amzn-s3-petdex4.s3.us-west-2.amazonaws.com/index.html";
     return;
   }
 
