@@ -96,7 +96,7 @@ function handleAnswer(answer) {
 document.querySelector(".btn-true").addEventListener("click", function () {
   if (finished) {
     window.location.href =
-      "https://amzn-s3-petdex4.s3.us-west-2.amazonaws.com/index.html";
+      "http://amzn-s3-petdex4.s3-website-us-west-2.amazonaws.com/";
     return;
   }
 
