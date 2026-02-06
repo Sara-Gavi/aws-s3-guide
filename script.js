@@ -98,7 +98,7 @@ document.querySelector(".btn-true").addEventListener("click", function () {
     window.location.href = "https://cbueno82.github.io/petdex.github.io/";
     return;
   }
-  // // Legacy S3 lab URL (kept for reference, no longer active) http://amzn-s3-petdex4.s3-website-us-west-2.amazonaws.com/
+  /* Legacy S3 lab URL (kept for reference, no longer active) http://amzn-s3-petdex4.s3-website-us-west-2.amazonaws.com/ */
 
   if (!started) {
     started = true;
