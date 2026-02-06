@@ -9,6 +9,11 @@ Interactive guide to understanding how **Static Website Hosting on Amazon S3** w
 - **ES:** Practicar el despliegue de contenido estático (HTML/CSS/JS) en la nube de AWS.
 - **EN:** Practice deploying static content (HTML/CSS/JS) on the AWS Cloud.
 
+### S3 Hosting Notice
+
+- **ES:** La URL mostrada al ganar el juego estuvo originalmente alojada en Amazon S3; el enlace se actualizó porque pertenecía a un laboratorio de pruebas temporal.
+- **EN:** The URL shown after winning the game was originally hosted on Amazon S3; the link was updated because it belonged to a temporary lab environment.
+
 ## Tecnologías / Technologies
 
 - **AWS S3**: Hosting del sitio.
